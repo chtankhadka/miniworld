@@ -57,7 +57,7 @@ func main() {
 
 	// Start server with graceful shutdown
 	srv := &http.Server{
-		Addr:    "192.168.0.234:" + port,
+		Addr:    "0.0.0.0:" + port,
 		Handler: router,
 	}
 
